@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CWI Sync Briefs — packaged licensing briefs from verified catalog data</title>
+<style>
+  :root { --bg:#0d1117; --card:#161b22; --line:#30363d; --txt:#e6edf3; --dim:#8b949e; --acc:#58a6ff; --ok:#3fb950; --warn:#d29922; --bad:#f85149; }
+  * { box-sizing:border-box; }
+  body { background:var(--bg); color:var(--txt); font-family:-apple-system,system-ui,Segoe UI,Roboto,sans-serif; margin:0; padding:24px 16px 64px; }
+  .wrap { max-width:860px; margin:0 auto; }
+  h1 { font-size:1.5rem; margin:0 0 4px; }
+  .sub { color:var(--dim); margin:0 0 20px; }
+  .row { display:flex; gap:10px; flex-wrap:wrap; margin-bottom:16px; }
+  .chip { background:var(--card); border:1px solid var(--line); border-radius:999px; padding:8px 14px; cursor:pointer; color:var(--txt); font-size:.9rem; }
+  .chip.on { border-color:var(--acc); color:var(--acc); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px; margin-bottom:14px; }
+  .card h2 { margin:0 0 2px; font-size:1.25rem; }
+  .meta { color:var(--dim); font-size:.85rem; margin-bottom:12px; }
+  .field { display:flex; gap:10px; padding:7px 0; border-top:1px solid var(--line); font-size:.92rem; }
+  .field .k { min-width:150px; color:var(--dim); }
+  .pill { display:inline-block; font-size:.68rem; font-weight:700; border-radius:999px; padding:2px 9px; margin-left:8px; vertical-align:middle; }
+  .VERIFIED, .third-party-verified { background:rgba(63,185,80,.15); color:var(--ok); }
+  .UNVERIFIED, .none-on-record, .withheld { background:rgba(210,153,34,.15); color:var(--warn); }
+  .STALE { background:rgba(248,81,73,.15); color:var(--bad); }
+  .note { color:var(--dim); font-size:.8rem; }
+  .chat { background:#0a0d12; border:1px solid var(--line); border-radius:12px; padding:14px; margin-top:8px; }
+  .bubble { background:var(--card); border:1px solid var(--line); border-radius:10px; padding:10px 12px; margin:8px 0; white-space:pre-wrap; font-size:.9rem; }
+  .bubble.me { border-color:var(--acc); margin-left:15%; }
+  .bubble.bot { margin-right:15%; }
+  input[type=text] { width:100%; background:var(--card); border:1px solid var(--line); color:var(--txt); border-radius:8px; padding:10px 12px; font-size:1rem; }
+  button.send { background:var(--acc); color:#04121f; border:0; border-radius:8px; padding:10px 18px; font-weight:700; cursor:pointer; }
+  .fine { color:var(--dim); font-size:.78rem; margin-top:18px; }
+  a { color:var(--acc); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>🎼 CWI Sync Briefs</h1>
+  <p class="sub">A music supervisor messages on Messenger/WhatsApp and gets a packaged sync brief — track facts, audio measurements, credits, clearance status, contact path. Every field evidence-tiered. Unverifiable fields read <b>UNVERIFIED</b> in the brief itself — never guessed.</p>
+
+  <div class="row" id="chips"></div>
+  <div id="brief"></div>
+
+  <div class="card">
+    <h2>Try the chat</h2>
+    <p class="meta">Type what a supervisor would type. This is exactly what the webhook returns — same engine, same data.</p>
+    <div class="chat" id="chatlog"></div>
+    <div class="row" style="margin-top:10px">
+      <div style="flex:1"><input type="text" id="msg" placeholder='e.g. "send me the sync brief for Diabolique"'></div>
+      <button class="send" id="send">Send</button>
+    </div>
+  </div>
+
+  <p class="fine">Briefs built <span id="built"></span> from live cwi-learn cue sheets. Freshness rule: volatile values are FRESH if observed within 48h, otherwise STALE with their last honest observation date. Timestamps are never manufactured. Splits and PRO data appear only at rights-holder clearance — currently UNVERIFIED across the board. Kill rule: fewer than 25 briefs requested in 90 days → this lane dies. $0 build, zero dependencies.</p>
+</div>
+
+<script type="module">
+import { setData, resolve, availableTracks, getBrief } from './engine.js';
+
+const res = await fetch('./briefs.json', { headers: { 'Accept-Encoding': 'identity' } });
+const data = await res.json();
+setData(data);
+document.getElementById('built').textContent = data.built_at;
+
+function pill(status, extra) {
+  return `<span class="pill ${status}">${status.replace(/-/g, ' ')}${extra || ''}</span>`;
+}
+function frow(k, f) {
+  const v = (f.value === null || f.value === undefined || (Array.isArray(f.value) && !f.value.length))
+    ? '<span class="note">(no value)</span>' : escapeHtml(String(f.value));
+  return `<div class="field"><div class="k">${k}${pill(f.status)}</div><div>${v}${f.note ? `<div class="note">${escapeHtml(f.note)}</div>` : ''}${f.observed_at ? `<div class="note">observed ${escapeHtml(f.observed_at)}${f.source ? ' · ' + escapeHtml(f.source) : ''}</div>` : ''}</div></div>`;
+}
+function escapeHtml(s) { return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function renderBrief(title) {
+  const b = getBrief(title);
+  if (!b) return;
+  const an = b.audio_numbers || {};
+  const anRows = Object.keys(an).map(k => frow(k, an[k])).join('');
+  const credRows = b.credits.map(c =>
+    `<div class="field"><div class="k">${escapeHtml(c.role)}${pill(c.tier)}</div><div>${escapeHtml(c.name)}<div class="note">${escapeHtml(c.note || '')}${c.source ? ' · ' + escapeHtml(c.source) : ''}</div></div></div>`).join('');
+  const plRows = b.placements.length ? b.placements.map(p =>
+    `<div class="field"><div class="k">${escapeHtml(p.playlist)}${pill(p.status, ' · #' + p.position)}</div><div><span class="note">last verified ${escapeHtml(p.observed_at)} — ${escapeHtml(p.note)}</span></div></div>`).join('')
+    : '<div class="field"><div class="k">placements</div><div><span class="note">none verified on record</span></div></div>';
+  document.getElementById('brief').innerHTML = `
+  <div class="card">
+    <h2>${escapeHtml(b.title)}</h2>
+    <div class="meta">That Boy Hi Hat · <a href="${escapeHtml(b.spotify.url)}" target="_blank" rel="noopener">Spotify</a> · brief built ${escapeHtml(b.built_at)}</div>
+    ${frow('artist', b.artist)}
+    ${frow('genre', b.genre)}
+    ${frow('duration', b.duration)}
+    ${frow('BPM', b.bpm)}
+    ${anRows}
+    ${frow('mood tags', b.mood_tags)}
+    ${frow('scene use', b.scene_use)}
+    ${frow('instrumentation', b.instrumentation)}
+    ${frow('lyrics', b.lyrics)}
+    ${credRows}
+    ${plRows}
+    <div class="field"><div class="k">clearance${pill('VERIFIED')}</div><div><b>${escapeHtml(b.clearance.status.toUpperCase())}</b> — ${escapeHtml(b.clearance.meaning)}<div class="note">rights contact: ${escapeHtml(b.clearance.rights_contact)}</div></div></div>
+    ${frow('splits', b.splits)}
+    ${frow('PRO affiliation', b.pro_affiliation)}
+    <div class="field"><div class="k">one-sheet${pill(b.one_sheet.status)}</div><div><span class="note">${escapeHtml(b.one_sheet.note)}</span> <a href="${escapeHtml(b.one_sheet_url)}" target="_blank" rel="noopener">living press kit</a></div></div>
+    ${frow('sync contact', b.contact)}
+  </div>`;
+}
+
+const chips = document.getElementById('chips');
+availableTracks().forEach((t, i) => {
+  const c = document.createElement('button');
+  c.className = 'chip' + (i === 0 ? ' on' : '');
+  c.textContent = t;
+  c.onclick = () => { chips.querySelectorAll('.chip').forEach(x => x.classList.remove('on')); c.classList.add('on'); renderBrief(t); };
+  chips.appendChild(c);
+});
+renderBrief(availableTracks()[0]);
+
+const log = document.getElementById('chatlog');
+function bubble(cls, text) {
+  const d = document.createElement('div');
+  d.className = 'bubble ' + cls;
+  d.textContent = text;
+  log.appendChild(d);
+  log.scrollTop = log.scrollHeight;
+}
+function sendMsg() {
+  const inp = document.getElementById('msg');
+  const t = inp.value.trim();
+  if (!t) return;
+  bubble('me', t);
+  const r = resolve(t);
+  bubble('bot', r.text);
+  inp.value = '';
+}
+document.getElementById('send').onclick = sendMsg;
+document.getElementById('msg').addEventListener('keydown', e => { if (e.key === 'Enter') sendMsg(); });
+bubble('bot', 'CWI Sync Briefs here. Name a track — e.g. "send me the sync brief for Diabolique".');
+</script>
+</body>
+</html>

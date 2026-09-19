@@ -1,0 +1,1180 @@
+{
+  "schema": "cwi.sync-brief/1.0",
+  "built_at": "2026-09-19",
+  "freshness_rule": "A volatile value is FRESH if observed within 48h; otherwise STALE with its last honest observation date. Non-volatile verified facts (credits, clearance policy text, contact) carry their verification date. Timestamps are never manufactured.",
+  "contact_default": "hp@cumulativeweb.com",
+  "briefs": [
+    {
+      "track_id": "cue-zooted-zone",
+      "title": "Zooted Zone",
+      "built_at": "2026-09-19",
+      "freshness_rule": "A volatile value is FRESH if observed within 48h; otherwise STALE with its last honest observation date. Non-volatile verified facts (credits, clearance policy text, contact) carry their verification date. Timestamps are never manufactured.",
+      "artist": {
+        "status": "VERIFIED",
+        "value": "That Boy Hi Hat",
+        "note": "Artist of record.",
+        "source": "cwi-learn cue sheet",
+        "observed_at": "2026-09-17"
+      },
+      "spotify": {
+        "id": "0emH8ktA8x4DkOFLsG5xkW",
+        "url": "https://open.spotify.com/track/0emH8ktA8x4DkOFLsG5xkW",
+        "status": "VERIFIED",
+        "observed_at": "2026-09-16",
+        "source": "live Spotify API verification"
+      },
+      "genre": {
+        "status": "VERIFIED",
+        "value": "alternative rap",
+        "note": "Genre per the artist/label; Post-Trap Futurism is the artist's self-description.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-15"
+      },
+      "duration": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Duration not measured. Not stated.",
+        "source": null,
+        "observed_at": null
+      },
+      "bpm": {
+        "status": "third-party-verified",
+        "value": 163,
+        "note": "Independent third-party audio analysis (NOT Spotify's own). Values may differ across analyzers.",
+        "source": "ReccoBeats API v1 (third-party audio analysis of the Spotify track — NOT Spotify's own analysis), fetched 2026-09-16",
+        "observed_at": "2026-09-16"
+      },
+      "audio_numbers": {
+        "key": {
+          "status": "third-party-verified",
+          "value": "C#",
+          "note": "Every number traced to a live ReccoBeats API response; independent third party, values may differ from other analyzers.",
+          "source": "ReccoBeats API v1 (third-party audio analysis of the Spotify track — NOT Spotify's own analysis), fetched 2026-09-16",
+          "observed_at": "2026-09-16"
+        },
+        "mode": {
+          "status": "third-party-verified",
+          "value": "major",
+          "note": "Every number traced to a live ReccoBeats API response; independent third party, values may differ from other analyzers.",
+          "source": "ReccoBeats API v1 (third-party audio analysis of the Spotify track — NOT Spotify's own analysis), fetched 2026-09-16",
+          "observed_at": "2026-09-16"
+        },
+        "danceability": {
+          "status": "third-party-verified",
+          "value": 0.784,
+          "note": "Every number traced to a live ReccoBeats API response; independent third party, values may differ from other analyzers.",
+          "source": "ReccoBeats API v1 (third-party audio analysis of the Spotify track — NOT Spotify's own analysis), fetched 2026-09-16",
+          "observed_at": "2026-09-16"
+        },
+        "energy": {
+          "status": "third-party-verified",
+          "value": 0.329,
+          "note": "Every number traced to a live ReccoBeats API response; independent third party, values may differ from other analyzers.",
+          "source": "ReccoBeats API v1 (third-party audio analysis of the Spotify track — NOT Spotify's own analysis), fetched 2026-09-16",
+          "observed_at": "2026-09-16"
+        },
+        "valence": {
+          "status": "third-party-verified",
+          "value": 0.411,
+          "note": "Every number traced to a live ReccoBeats API response; independent third party, values may differ from other analyzers.",
+          "source": "ReccoBeats API v1 (third-party audio analysis of the Spotify track — NOT Spotify's own analysis), fetched 2026-09-16",
+          "observed_at": "2026-09-16"
+        },
+        "acousticness": {
+          "status": "third-party-verified",
+          "value": 0.0153,
+          "note": "Every number traced to a live ReccoBeats API response; independent third party, values may differ from other analyzers.",
+          "source": "ReccoBeats API v1 (third-party audio analysis of the Spotify track — NOT Spotify's own analysis), fetched 2026-09-16",
+          "observed_at": "2026-09-16"
+        },
+        "instrumentalness": {
+          "status": "third-party-verified",
+          "value": 0,
+          "note": "Every number traced to a live ReccoBeats API response; independent third party, values may differ from other analyzers.",
+          "source": "ReccoBeats API v1 (third-party audio analysis of the Spotify track — NOT Spotify's own analysis), fetched 2026-09-16",
+          "observed_at": "2026-09-16"
+        },
+        "speechiness": {
+          "status": "third-party-verified",
+          "value": 0.241,
+          "note": "Every number traced to a live ReccoBeats API response; independent third party, values may differ from other analyzers.",
+          "source": "ReccoBeats API v1 (third-party audio analysis of the Spotify track — NOT Spotify's own analysis), fetched 2026-09-16",
+          "observed_at": "2026-09-16"
+        },
+        "loudness_db": {
+          "status": "third-party-verified",
+          "value": -15.549,
+          "note": "Every number traced to a live ReccoBeats API response; independent third party, values may differ from other analyzers.",
+          "source": "ReccoBeats API v1 (third-party audio analysis of the Spotify track — NOT Spotify's own analysis), fetched 2026-09-16",
+          "observed_at": "2026-09-16"
+        }
+      },
+      "mood_tags": {
+        "status": "UNVERIFIED",
+        "value": [],
+        "note": "Descriptive mood tags pending human annotation. Not machine-inferred.",
+        "source": null,
+        "observed_at": null
+      },
+      "scene_use": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Scene use not assessed. Do not infer; sync availability requires rights review.",
+        "source": null,
+        "observed_at": null
+      },
+      "instrumentation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Instrumentation not assessed. Do not infer.",
+        "source": null,
+        "observed_at": null
+      },
+      "lyrics": {
+        "status": "withheld",
+        "value": null,
+        "note": "Lyrics require Black's ear before publication. No lyric text is carried in this brief.",
+        "source": null,
+        "observed_at": null
+      },
+      "credits": [
+        {
+          "role": "producer",
+          "name": "Kokurcho",
+          "tier": "VERIFIED",
+          "source": "cwi-learn/llms.txt verified-collaborators (2026-09-15); CWI Medium articles",
+          "note": "BET Awards-nominated; RIAA Gold and multi-platinum certified (owner-confirmed 2026-09-15)."
+        },
+        {
+          "role": "mix/master",
+          "name": "Hybrid",
+          "tier": "VERIFIED",
+          "source": "cwi-learn/llms.txt verified-collaborators (2026-09-15); CWI Medium articles",
+          "note": "Mixed/mastered at his Hagerstown, MD studio."
+        },
+        {
+          "role": "recording",
+          "name": "Hagerstown, MD — February 2023",
+          "tier": "VERIFIED",
+          "source": "CWI Medium articles (per 2026-09-15 memory import)",
+          "note": "Recording location/date as published by CWI."
+        }
+      ],
+      "placements": [
+        {
+          "playlist": "New Rap Hits",
+          "position": 30,
+          "status": "STALE",
+          "note": "Last verified 2026-09-17; older than 48h, re-verification pending.",
+          "observed_at": "2026-09-17",
+          "tier": "VERIFIED",
+          "source": "Via Audiartist submission #25818; holding per 2026-09-17 scan."
+        },
+        {
+          "playlist": "No Label Needed",
+          "position": 21,
+          "status": "STALE",
+          "note": "Last verified 2026-09-16; older than 48h, re-verification pending.",
+          "observed_at": "2026-09-16",
+          "tier": "VERIFIED",
+          "source": "Curator Flow; confirmed by full scan 2026-09-16 (late delivery after absent 9/15 scans)."
+        },
+        {
+          "playlist": "360°: The Best Indie Music (Eric Alper)",
+          "position": 216,
+          "status": "STALE",
+          "note": "Last verified 2026-09-17; older than 48h, re-verification pending.",
+          "observed_at": "2026-09-17",
+          "tier": "VERIFIED",
+          "source": "Added 2026-09-17 in reply to Black's 2026-09-14 pitch."
+        }
+      ],
+      "clearance": {
+        "status": "amber",
+        "meaning": "Clearance status unknown. Sync licensing requires rights review with the rights holder before any use. This cue sheet states no terms and makes no one-stop or pre-cleared claim.",
+        "tier": "VERIFIED",
+        "source": "cwi-learn clearance policy",
+        "observed_at": "2026-09-17",
+        "rights_contact": "hp@cumulativeweb.com"
+      },
+      "splits": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No splits data on record. Diabolique splits are explicitly UNVERIFIED as of 2026-09-18. Splits are shared only at Black's clearance — this brief will never present them as settled.",
+        "source": null,
+        "observed_at": null
+      },
+      "pro_affiliation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No PRO affiliation on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet": {
+        "status": "none-on-record",
+        "value": null,
+        "note": "No standalone one-sheet file on record. Current equivalent: the living press kit, which re-verifies every claim on load.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet_url": "https://cumulativewebinc.github.io/cwi-press-kits/",
+      "contact": {
+        "status": "VERIFIED",
+        "value": "hp@cumulativeweb.com",
+        "note": "Business & sync inquiries (Cumulative Web Inc).",
+        "source": "CWI artist record",
+        "observed_at": "2026-09-15"
+      },
+      "provenance": {
+        "cue_sheet_issued": "2026-09-17",
+        "issuer": "agent:CWI_AandR (Lane D, Operation Conversion)",
+        "brief_built": "2026-09-19"
+      }
+    },
+    {
+      "track_id": "cue-shaka-zulu",
+      "title": "Shaka Zulu",
+      "built_at": "2026-09-19",
+      "freshness_rule": "A volatile value is FRESH if observed within 48h; otherwise STALE with its last honest observation date. Non-volatile verified facts (credits, clearance policy text, contact) carry their verification date. Timestamps are never manufactured.",
+      "artist": {
+        "status": "VERIFIED",
+        "value": "That Boy Hi Hat",
+        "note": "Artist of record.",
+        "source": "cwi-learn cue sheet",
+        "observed_at": "2026-09-17"
+      },
+      "spotify": {
+        "id": "3pQEzg7xFqGIk0CK1Za1Kw",
+        "url": "https://open.spotify.com/track/3pQEzg7xFqGIk0CK1Za1Kw",
+        "status": "VERIFIED",
+        "observed_at": "2026-09-16",
+        "source": "live Spotify API verification"
+      },
+      "genre": {
+        "status": "VERIFIED",
+        "value": "alternative rap",
+        "note": "Genre per the artist/label; Post-Trap Futurism is the artist's self-description.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-15"
+      },
+      "duration": {
+        "status": "VERIFIED",
+        "value": 252,
+        "note": "Measured duration in seconds.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-17"
+      },
+      "bpm": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No BPM measurement on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "audio_numbers": {},
+      "mood_tags": {
+        "status": "UNVERIFIED",
+        "value": [],
+        "note": "Descriptive mood tags pending human annotation. Not machine-inferred.",
+        "source": null,
+        "observed_at": null
+      },
+      "scene_use": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Scene use not assessed. Do not infer; sync availability requires rights review.",
+        "source": null,
+        "observed_at": null
+      },
+      "instrumentation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Instrumentation not assessed. Do not infer.",
+        "source": null,
+        "observed_at": null
+      },
+      "lyrics": {
+        "status": "withheld",
+        "value": null,
+        "note": "Lyrics require Black's ear before publication. No lyric text is carried in this brief.",
+        "source": null,
+        "observed_at": null
+      },
+      "credits": [],
+      "placements": [
+        {
+          "playlist": "New Rap Hits",
+          "position": 21,
+          "status": "STALE",
+          "note": "Last verified 2026-09-17; older than 48h, re-verification pending.",
+          "observed_at": "2026-09-17",
+          "tier": "VERIFIED",
+          "source": "Via Audiartist submission #25821; holding per 2026-09-17 scan."
+        }
+      ],
+      "clearance": {
+        "status": "amber",
+        "meaning": "Clearance status unknown. Sync licensing requires rights review with the rights holder before any use. This cue sheet states no terms and makes no one-stop or pre-cleared claim.",
+        "tier": "VERIFIED",
+        "source": "cwi-learn clearance policy",
+        "observed_at": "2026-09-17",
+        "rights_contact": "hp@cumulativeweb.com"
+      },
+      "splits": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No splits data on record. Diabolique splits are explicitly UNVERIFIED as of 2026-09-18. Splits are shared only at Black's clearance — this brief will never present them as settled.",
+        "source": null,
+        "observed_at": null
+      },
+      "pro_affiliation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No PRO affiliation on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet": {
+        "status": "none-on-record",
+        "value": null,
+        "note": "No standalone one-sheet file on record. Current equivalent: the living press kit, which re-verifies every claim on load.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet_url": "https://cumulativewebinc.github.io/cwi-press-kits/",
+      "contact": {
+        "status": "VERIFIED",
+        "value": "hp@cumulativeweb.com",
+        "note": "Business & sync inquiries (Cumulative Web Inc).",
+        "source": "CWI artist record",
+        "observed_at": "2026-09-15"
+      },
+      "provenance": {
+        "cue_sheet_issued": "2026-09-17",
+        "issuer": "agent:CWI_AandR (Lane D, Operation Conversion)",
+        "brief_built": "2026-09-19"
+      }
+    },
+    {
+      "track_id": "cue-diabolique-louder",
+      "title": "Diabolique (Louder)",
+      "built_at": "2026-09-19",
+      "freshness_rule": "A volatile value is FRESH if observed within 48h; otherwise STALE with its last honest observation date. Non-volatile verified facts (credits, clearance policy text, contact) carry their verification date. Timestamps are never manufactured.",
+      "artist": {
+        "status": "VERIFIED",
+        "value": "That Boy Hi Hat",
+        "note": "Artist of record.",
+        "source": "cwi-learn cue sheet",
+        "observed_at": "2026-09-17"
+      },
+      "spotify": {
+        "id": "2eSyWmIdPzEMyWejLb2LBj",
+        "url": "https://open.spotify.com/track/2eSyWmIdPzEMyWejLb2LBj",
+        "status": "VERIFIED",
+        "observed_at": "2026-09-16",
+        "source": "live Spotify API verification"
+      },
+      "genre": {
+        "status": "VERIFIED",
+        "value": "alternative rap",
+        "note": "Genre per the artist/label; Post-Trap Futurism is the artist's self-description.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-15"
+      },
+      "duration": {
+        "status": "VERIFIED",
+        "value": 156,
+        "note": "Measured duration in seconds.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-17"
+      },
+      "bpm": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No BPM measurement on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "audio_numbers": {},
+      "mood_tags": {
+        "status": "UNVERIFIED",
+        "value": [],
+        "note": "Descriptive mood tags pending human annotation. Not machine-inferred.",
+        "source": null,
+        "observed_at": null
+      },
+      "scene_use": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Scene use not assessed. Do not infer; sync availability requires rights review.",
+        "source": null,
+        "observed_at": null
+      },
+      "instrumentation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Instrumentation not assessed. Do not infer.",
+        "source": null,
+        "observed_at": null
+      },
+      "lyrics": {
+        "status": "withheld",
+        "value": null,
+        "note": "Lyrics require Black's ear before publication. No lyric text is carried in this brief.",
+        "source": null,
+        "observed_at": null
+      },
+      "credits": [
+        {
+          "role": "producer",
+          "name": "Hybrid (with Black Lansky)",
+          "tier": "VERIFIED",
+          "source": "cwi-learn/llms.txt verified-collaborators (2026-09-15)",
+          "note": "Black Lansky is co-producer on Diabolique."
+        },
+        {
+          "role": "recording_studio",
+          "name": "Cue Recording Studio, Arlington, Virginia",
+          "tier": "VERIFIED",
+          "source": "Owner-confirmed 2026-09-15 (official position for all sync one-sheets)",
+          "note": "Official position: Diabolique was recorded at Cue Recording Studio, Arlington, Virginia."
+        },
+        {
+          "role": "engineer",
+          "name": "Blaine Misner",
+          "tier": "VERIFIED",
+          "source": "cwi-learn/llms.txt verified-collaborators (2026-09-15)",
+          "note": "Recording/mastering engineer at Cue Recording Studios (per Cue's own pages + SoundBetter)."
+        }
+      ],
+      "placements": [],
+      "clearance": {
+        "status": "amber",
+        "meaning": "Clearance status unknown. Sync licensing requires rights review with the rights holder before any use. This cue sheet states no terms and makes no one-stop or pre-cleared claim.",
+        "tier": "VERIFIED",
+        "source": "cwi-learn clearance policy",
+        "observed_at": "2026-09-17",
+        "rights_contact": "hp@cumulativeweb.com"
+      },
+      "splits": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No splits data on record. Diabolique splits are explicitly UNVERIFIED as of 2026-09-18. Splits are shared only at Black's clearance — this brief will never present them as settled.",
+        "source": null,
+        "observed_at": null
+      },
+      "pro_affiliation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No PRO affiliation on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet": {
+        "status": "none-on-record",
+        "value": null,
+        "note": "No standalone one-sheet file on record. Current equivalent: the living press kit, which re-verifies every claim on load.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet_url": "https://cumulativewebinc.github.io/cwi-press-kits/",
+      "contact": {
+        "status": "VERIFIED",
+        "value": "hp@cumulativeweb.com",
+        "note": "Business & sync inquiries (Cumulative Web Inc).",
+        "source": "CWI artist record",
+        "observed_at": "2026-09-15"
+      },
+      "provenance": {
+        "cue_sheet_issued": "2026-09-17",
+        "issuer": "agent:CWI_AandR (Lane D, Operation Conversion)",
+        "brief_built": "2026-09-19"
+      }
+    },
+    {
+      "track_id": "cue-warped-and-wicked",
+      "title": "Warped & Wicked",
+      "built_at": "2026-09-19",
+      "freshness_rule": "A volatile value is FRESH if observed within 48h; otherwise STALE with its last honest observation date. Non-volatile verified facts (credits, clearance policy text, contact) carry their verification date. Timestamps are never manufactured.",
+      "artist": {
+        "status": "VERIFIED",
+        "value": "That Boy Hi Hat",
+        "note": "Artist of record.",
+        "source": "cwi-learn cue sheet",
+        "observed_at": "2026-09-17"
+      },
+      "spotify": {
+        "id": "3w4RKguHAT2xd9K0w5CklC",
+        "url": "https://open.spotify.com/track/3w4RKguHAT2xd9K0w5CklC",
+        "status": "VERIFIED",
+        "observed_at": "2026-09-16",
+        "source": "live Spotify API verification"
+      },
+      "genre": {
+        "status": "VERIFIED",
+        "value": "alternative rap",
+        "note": "Genre per the artist/label; Post-Trap Futurism is the artist's self-description.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-15"
+      },
+      "duration": {
+        "status": "VERIFIED",
+        "value": 249,
+        "note": "Measured duration in seconds.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-17"
+      },
+      "bpm": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No BPM measurement on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "audio_numbers": {},
+      "mood_tags": {
+        "status": "UNVERIFIED",
+        "value": [],
+        "note": "Descriptive mood tags pending human annotation. Not machine-inferred.",
+        "source": null,
+        "observed_at": null
+      },
+      "scene_use": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Scene use not assessed. Do not infer; sync availability requires rights review.",
+        "source": null,
+        "observed_at": null
+      },
+      "instrumentation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Instrumentation not assessed. Do not infer.",
+        "source": null,
+        "observed_at": null
+      },
+      "lyrics": {
+        "status": "withheld",
+        "value": null,
+        "note": "Lyrics require Black's ear before publication. No lyric text is carried in this brief.",
+        "source": null,
+        "observed_at": null
+      },
+      "credits": [],
+      "placements": [],
+      "clearance": {
+        "status": "amber",
+        "meaning": "Clearance status unknown. Sync licensing requires rights review with the rights holder before any use. This cue sheet states no terms and makes no one-stop or pre-cleared claim.",
+        "tier": "VERIFIED",
+        "source": "cwi-learn clearance policy",
+        "observed_at": "2026-09-17",
+        "rights_contact": "hp@cumulativeweb.com"
+      },
+      "splits": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No splits data on record. Diabolique splits are explicitly UNVERIFIED as of 2026-09-18. Splits are shared only at Black's clearance — this brief will never present them as settled.",
+        "source": null,
+        "observed_at": null
+      },
+      "pro_affiliation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No PRO affiliation on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet": {
+        "status": "none-on-record",
+        "value": null,
+        "note": "No standalone one-sheet file on record. Current equivalent: the living press kit, which re-verifies every claim on load.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet_url": "https://cumulativewebinc.github.io/cwi-press-kits/",
+      "contact": {
+        "status": "VERIFIED",
+        "value": "hp@cumulativeweb.com",
+        "note": "Business & sync inquiries (Cumulative Web Inc).",
+        "source": "CWI artist record",
+        "observed_at": "2026-09-15"
+      },
+      "provenance": {
+        "cue_sheet_issued": "2026-09-17",
+        "issuer": "agent:CWI_AandR (Lane D, Operation Conversion)",
+        "brief_built": "2026-09-19"
+      }
+    },
+    {
+      "track_id": "cue-golden-diamond-mix-1",
+      "title": "Golden Diamond",
+      "built_at": "2026-09-19",
+      "freshness_rule": "A volatile value is FRESH if observed within 48h; otherwise STALE with its last honest observation date. Non-volatile verified facts (credits, clearance policy text, contact) carry their verification date. Timestamps are never manufactured.",
+      "artist": {
+        "status": "VERIFIED",
+        "value": "That Boy Hi Hat",
+        "note": "Artist of record.",
+        "source": "cwi-learn cue sheet",
+        "observed_at": "2026-09-17"
+      },
+      "spotify": {
+        "id": "4RFWRhPn8NX0DTQPpl1swe",
+        "url": "https://open.spotify.com/track/4RFWRhPn8NX0DTQPpl1swe",
+        "status": "VERIFIED",
+        "observed_at": "2026-09-16",
+        "source": "live Spotify API verification"
+      },
+      "genre": {
+        "status": "VERIFIED",
+        "value": "alternative rap",
+        "note": "Genre per the artist/label; Post-Trap Futurism is the artist's self-description.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-15"
+      },
+      "duration": {
+        "status": "VERIFIED",
+        "value": 243,
+        "note": "Measured duration in seconds.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-17"
+      },
+      "bpm": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No BPM measurement on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "audio_numbers": {},
+      "mood_tags": {
+        "status": "UNVERIFIED",
+        "value": [],
+        "note": "Descriptive mood tags pending human annotation. Not machine-inferred.",
+        "source": null,
+        "observed_at": null
+      },
+      "scene_use": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Scene use not assessed. Do not infer; sync availability requires rights review.",
+        "source": null,
+        "observed_at": null
+      },
+      "instrumentation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Instrumentation not assessed. Do not infer.",
+        "source": null,
+        "observed_at": null
+      },
+      "lyrics": {
+        "status": "withheld",
+        "value": null,
+        "note": "Lyrics require Black's ear before publication. No lyric text is carried in this brief.",
+        "source": null,
+        "observed_at": null
+      },
+      "credits": [],
+      "placements": [],
+      "clearance": {
+        "status": "amber",
+        "meaning": "Clearance status unknown. Sync licensing requires rights review with the rights holder before any use. This cue sheet states no terms and makes no one-stop or pre-cleared claim.",
+        "tier": "VERIFIED",
+        "source": "cwi-learn clearance policy",
+        "observed_at": "2026-09-17",
+        "rights_contact": "hp@cumulativeweb.com"
+      },
+      "splits": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No splits data on record. Diabolique splits are explicitly UNVERIFIED as of 2026-09-18. Splits are shared only at Black's clearance — this brief will never present them as settled.",
+        "source": null,
+        "observed_at": null
+      },
+      "pro_affiliation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No PRO affiliation on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet": {
+        "status": "none-on-record",
+        "value": null,
+        "note": "No standalone one-sheet file on record. Current equivalent: the living press kit, which re-verifies every claim on load.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet_url": "https://cumulativewebinc.github.io/cwi-press-kits/",
+      "contact": {
+        "status": "VERIFIED",
+        "value": "hp@cumulativeweb.com",
+        "note": "Business & sync inquiries (Cumulative Web Inc).",
+        "source": "CWI artist record",
+        "observed_at": "2026-09-15"
+      },
+      "provenance": {
+        "cue_sheet_issued": "2026-09-17",
+        "issuer": "agent:CWI_AandR (Lane D, Operation Conversion)",
+        "brief_built": "2026-09-19"
+      }
+    },
+    {
+      "track_id": "cue-spirits-n-shadows",
+      "title": "Spirits n Shadows",
+      "built_at": "2026-09-19",
+      "freshness_rule": "A volatile value is FRESH if observed within 48h; otherwise STALE with its last honest observation date. Non-volatile verified facts (credits, clearance policy text, contact) carry their verification date. Timestamps are never manufactured.",
+      "artist": {
+        "status": "VERIFIED",
+        "value": "Mas",
+        "note": "Artist of record.",
+        "source": "cwi-learn cue sheet",
+        "observed_at": "2026-09-17"
+      },
+      "spotify": {
+        "id": "2tEdW6WKfcs2NGI6OIvAm6",
+        "url": "https://open.spotify.com/track/2tEdW6WKfcs2NGI6OIvAm6",
+        "status": "VERIFIED",
+        "observed_at": "2026-09-16",
+        "source": "live Spotify API verification"
+      },
+      "genre": {
+        "status": "VERIFIED",
+        "value": "alternative rap",
+        "note": "Genre per the artist/label; Post-Trap Futurism is the artist's self-description.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-15"
+      },
+      "duration": {
+        "status": "VERIFIED",
+        "value": 198,
+        "note": "Measured duration in seconds.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-17"
+      },
+      "bpm": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No BPM measurement on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "audio_numbers": {},
+      "mood_tags": {
+        "status": "UNVERIFIED",
+        "value": [],
+        "note": "Descriptive mood tags pending human annotation. Not machine-inferred.",
+        "source": null,
+        "observed_at": null
+      },
+      "scene_use": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Scene use not assessed. Do not infer; sync availability requires rights review.",
+        "source": null,
+        "observed_at": null
+      },
+      "instrumentation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Instrumentation not assessed. Do not infer.",
+        "source": null,
+        "observed_at": null
+      },
+      "lyrics": {
+        "status": "withheld",
+        "value": null,
+        "note": "Lyrics require Black's ear before publication. No lyric text is carried in this brief.",
+        "source": null,
+        "observed_at": null
+      },
+      "credits": [],
+      "placements": [],
+      "clearance": {
+        "status": "amber",
+        "meaning": "Clearance status unknown. Sync licensing requires rights review with the rights holder before any use. This cue sheet states no terms and makes no one-stop or pre-cleared claim.",
+        "tier": "VERIFIED",
+        "source": "cwi-learn clearance policy",
+        "observed_at": "2026-09-17",
+        "rights_contact": "hp@cumulativeweb.com"
+      },
+      "splits": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No splits data on record. Diabolique splits are explicitly UNVERIFIED as of 2026-09-18. Splits are shared only at Black's clearance — this brief will never present them as settled.",
+        "source": null,
+        "observed_at": null
+      },
+      "pro_affiliation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No PRO affiliation on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet": {
+        "status": "none-on-record",
+        "value": null,
+        "note": "No standalone one-sheet file on record. Current equivalent: the living press kit, which re-verifies every claim on load.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet_url": "https://cumulativewebinc.github.io/cwi-press-kits/",
+      "contact": {
+        "status": "VERIFIED",
+        "value": "hp@cumulativeweb.com",
+        "note": "Business & sync inquiries (Cumulative Web Inc).",
+        "source": "CWI artist record",
+        "observed_at": "2026-09-15"
+      },
+      "provenance": {
+        "cue_sheet_issued": "2026-09-17",
+        "issuer": "agent:CWI_AandR (Lane D, Operation Conversion)",
+        "brief_built": "2026-09-19"
+      }
+    },
+    {
+      "track_id": "cue-rainbows-and-roses-mix-1",
+      "title": "Rainbows And Roses",
+      "built_at": "2026-09-19",
+      "freshness_rule": "A volatile value is FRESH if observed within 48h; otherwise STALE with its last honest observation date. Non-volatile verified facts (credits, clearance policy text, contact) carry their verification date. Timestamps are never manufactured.",
+      "artist": {
+        "status": "VERIFIED",
+        "value": "That Boy Hi Hat",
+        "note": "Artist of record.",
+        "source": "cwi-learn cue sheet",
+        "observed_at": "2026-09-17"
+      },
+      "spotify": {
+        "id": "2ZUYjQGsRLHRcsfgyeAWpo",
+        "url": "https://open.spotify.com/track/2ZUYjQGsRLHRcsfgyeAWpo",
+        "status": "VERIFIED",
+        "observed_at": "2026-09-16",
+        "source": "live Spotify API verification"
+      },
+      "genre": {
+        "status": "VERIFIED",
+        "value": "alternative rap",
+        "note": "Genre per the artist/label; Post-Trap Futurism is the artist's self-description.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-15"
+      },
+      "duration": {
+        "status": "VERIFIED",
+        "value": 241,
+        "note": "Measured duration in seconds.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-17"
+      },
+      "bpm": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No BPM measurement on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "audio_numbers": {},
+      "mood_tags": {
+        "status": "UNVERIFIED",
+        "value": [],
+        "note": "Descriptive mood tags pending human annotation. Not machine-inferred.",
+        "source": null,
+        "observed_at": null
+      },
+      "scene_use": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Scene use not assessed. Do not infer; sync availability requires rights review.",
+        "source": null,
+        "observed_at": null
+      },
+      "instrumentation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Instrumentation not assessed. Do not infer.",
+        "source": null,
+        "observed_at": null
+      },
+      "lyrics": {
+        "status": "withheld",
+        "value": null,
+        "note": "Lyrics require Black's ear before publication. No lyric text is carried in this brief.",
+        "source": null,
+        "observed_at": null
+      },
+      "credits": [],
+      "placements": [],
+      "clearance": {
+        "status": "amber",
+        "meaning": "Clearance status unknown. Sync licensing requires rights review with the rights holder before any use. This cue sheet states no terms and makes no one-stop or pre-cleared claim.",
+        "tier": "VERIFIED",
+        "source": "cwi-learn clearance policy",
+        "observed_at": "2026-09-17",
+        "rights_contact": "hp@cumulativeweb.com"
+      },
+      "splits": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No splits data on record. Diabolique splits are explicitly UNVERIFIED as of 2026-09-18. Splits are shared only at Black's clearance — this brief will never present them as settled.",
+        "source": null,
+        "observed_at": null
+      },
+      "pro_affiliation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No PRO affiliation on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet": {
+        "status": "none-on-record",
+        "value": null,
+        "note": "No standalone one-sheet file on record. Current equivalent: the living press kit, which re-verifies every claim on load.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet_url": "https://cumulativewebinc.github.io/cwi-press-kits/",
+      "contact": {
+        "status": "VERIFIED",
+        "value": "hp@cumulativeweb.com",
+        "note": "Business & sync inquiries (Cumulative Web Inc).",
+        "source": "CWI artist record",
+        "observed_at": "2026-09-15"
+      },
+      "provenance": {
+        "cue_sheet_issued": "2026-09-17",
+        "issuer": "agent:CWI_AandR (Lane D, Operation Conversion)",
+        "brief_built": "2026-09-19"
+      }
+    },
+    {
+      "track_id": "cue-7th-angel-mix-1",
+      "title": "7th Angel",
+      "built_at": "2026-09-19",
+      "freshness_rule": "A volatile value is FRESH if observed within 48h; otherwise STALE with its last honest observation date. Non-volatile verified facts (credits, clearance policy text, contact) carry their verification date. Timestamps are never manufactured.",
+      "artist": {
+        "status": "VERIFIED",
+        "value": "That Boy Hi Hat",
+        "note": "Artist of record.",
+        "source": "cwi-learn cue sheet",
+        "observed_at": "2026-09-17"
+      },
+      "spotify": {
+        "id": "2dvfN5rFyQO69qmb5oYlRG",
+        "url": "https://open.spotify.com/track/2dvfN5rFyQO69qmb5oYlRG",
+        "status": "VERIFIED",
+        "observed_at": "2026-09-16",
+        "source": "live Spotify API verification"
+      },
+      "genre": {
+        "status": "VERIFIED",
+        "value": "alternative rap",
+        "note": "Genre per the artist/label; Post-Trap Futurism is the artist's self-description.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-15"
+      },
+      "duration": {
+        "status": "VERIFIED",
+        "value": 240,
+        "note": "Measured duration in seconds.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-17"
+      },
+      "bpm": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No BPM measurement on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "audio_numbers": {},
+      "mood_tags": {
+        "status": "UNVERIFIED",
+        "value": [],
+        "note": "Descriptive mood tags pending human annotation. Not machine-inferred.",
+        "source": null,
+        "observed_at": null
+      },
+      "scene_use": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Scene use not assessed. Do not infer; sync availability requires rights review.",
+        "source": null,
+        "observed_at": null
+      },
+      "instrumentation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Instrumentation not assessed. Do not infer.",
+        "source": null,
+        "observed_at": null
+      },
+      "lyrics": {
+        "status": "withheld",
+        "value": null,
+        "note": "Lyrics require Black's ear before publication. No lyric text is carried in this brief.",
+        "source": null,
+        "observed_at": null
+      },
+      "credits": [],
+      "placements": [],
+      "clearance": {
+        "status": "amber",
+        "meaning": "Clearance status unknown. Sync licensing requires rights review with the rights holder before any use. This cue sheet states no terms and makes no one-stop or pre-cleared claim.",
+        "tier": "VERIFIED",
+        "source": "cwi-learn clearance policy",
+        "observed_at": "2026-09-17",
+        "rights_contact": "hp@cumulativeweb.com"
+      },
+      "splits": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No splits data on record. Diabolique splits are explicitly UNVERIFIED as of 2026-09-18. Splits are shared only at Black's clearance — this brief will never present them as settled.",
+        "source": null,
+        "observed_at": null
+      },
+      "pro_affiliation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No PRO affiliation on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet": {
+        "status": "none-on-record",
+        "value": null,
+        "note": "No standalone one-sheet file on record. Current equivalent: the living press kit, which re-verifies every claim on load.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet_url": "https://cumulativewebinc.github.io/cwi-press-kits/",
+      "contact": {
+        "status": "VERIFIED",
+        "value": "hp@cumulativeweb.com",
+        "note": "Business & sync inquiries (Cumulative Web Inc).",
+        "source": "CWI artist record",
+        "observed_at": "2026-09-15"
+      },
+      "provenance": {
+        "cue_sheet_issued": "2026-09-17",
+        "issuer": "agent:CWI_AandR (Lane D, Operation Conversion)",
+        "brief_built": "2026-09-19"
+      }
+    },
+    {
+      "track_id": "cue-place-i-go-to-dream",
+      "title": "Place I Go To Dream",
+      "built_at": "2026-09-19",
+      "freshness_rule": "A volatile value is FRESH if observed within 48h; otherwise STALE with its last honest observation date. Non-volatile verified facts (credits, clearance policy text, contact) carry their verification date. Timestamps are never manufactured.",
+      "artist": {
+        "status": "VERIFIED",
+        "value": "That Boy Hi Hat",
+        "note": "Artist of record.",
+        "source": "cwi-learn cue sheet",
+        "observed_at": "2026-09-17"
+      },
+      "spotify": {
+        "id": "3KX10tZBft6gp2Nea9HZOB",
+        "url": "https://open.spotify.com/track/3KX10tZBft6gp2Nea9HZOB",
+        "status": "VERIFIED",
+        "observed_at": "2026-09-16",
+        "source": "live Spotify API verification"
+      },
+      "genre": {
+        "status": "VERIFIED",
+        "value": "alternative rap",
+        "note": "Genre per the artist/label; Post-Trap Futurism is the artist's self-description.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-15"
+      },
+      "duration": {
+        "status": "VERIFIED",
+        "value": 168,
+        "note": "Measured duration in seconds.",
+        "source": "cwi-learn",
+        "observed_at": "2026-09-17"
+      },
+      "bpm": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No BPM measurement on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "audio_numbers": {},
+      "mood_tags": {
+        "status": "UNVERIFIED",
+        "value": [],
+        "note": "Descriptive mood tags pending human annotation. Not machine-inferred.",
+        "source": null,
+        "observed_at": null
+      },
+      "scene_use": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Scene use not assessed. Do not infer; sync availability requires rights review.",
+        "source": null,
+        "observed_at": null
+      },
+      "instrumentation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "Instrumentation not assessed. Do not infer.",
+        "source": null,
+        "observed_at": null
+      },
+      "lyrics": {
+        "status": "withheld",
+        "value": null,
+        "note": "Lyrics require Black's ear before publication. No lyric text is carried in this brief.",
+        "source": null,
+        "observed_at": null
+      },
+      "credits": [],
+      "placements": [],
+      "clearance": {
+        "status": "amber",
+        "meaning": "Clearance status unknown. Sync licensing requires rights review with the rights holder before any use. This cue sheet states no terms and makes no one-stop or pre-cleared claim.",
+        "tier": "VERIFIED",
+        "source": "cwi-learn clearance policy",
+        "observed_at": "2026-09-17",
+        "rights_contact": "hp@cumulativeweb.com"
+      },
+      "splits": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No splits data on record. Diabolique splits are explicitly UNVERIFIED as of 2026-09-18. Splits are shared only at Black's clearance — this brief will never present them as settled.",
+        "source": null,
+        "observed_at": null
+      },
+      "pro_affiliation": {
+        "status": "UNVERIFIED",
+        "value": null,
+        "note": "No PRO affiliation on record for this track.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet": {
+        "status": "none-on-record",
+        "value": null,
+        "note": "No standalone one-sheet file on record. Current equivalent: the living press kit, which re-verifies every claim on load.",
+        "source": null,
+        "observed_at": null
+      },
+      "one_sheet_url": "https://cumulativewebinc.github.io/cwi-press-kits/",
+      "contact": {
+        "status": "VERIFIED",
+        "value": "hp@cumulativeweb.com",
+        "note": "Business & sync inquiries (Cumulative Web Inc).",
+        "source": "CWI artist record",
+        "observed_at": "2026-09-15"
+      },
+      "provenance": {
+        "cue_sheet_issued": "2026-09-17",
+        "issuer": "agent:CWI_AandR (Lane D, Operation Conversion)",
+        "brief_built": "2026-09-19"
+      }
+    }
+  ]
+}
