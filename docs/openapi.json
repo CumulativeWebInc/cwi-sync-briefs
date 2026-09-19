@@ -1,0 +1,43 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Sync Briefs API",
+    "version": "1.0.0",
+    "description": "Sync verification stack, part two: structured briefs built from verified catalog data \u2014 the machine-readable counterpart to the proof embeds, ready for supervisor and agent consumption. Public read-only API. All endpoints are static files served over HTTPS GET via GitHub Pages. No authentication required.",
+    "contact": {
+      "name": "Cumulative Web Inc",
+      "url": "https://cumulativeweb.com",
+      "email": "hp@cumulativeweb.com"
+    },
+    "license": {
+      "name": "See https://cumulativewebinc.github.io/cwi-legal/terms.html"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://cumulativewebinc.github.io/cwi-sync-briefs",
+      "description": "Production"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "getProductPage",
+        "summary": "Product page",
+        "description": "Sync briefs product UI",
+        "responses": {
+          "200": {
+            "description": "Product page",
+            "content": {
+              "text/html": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
